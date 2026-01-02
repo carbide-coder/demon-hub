@@ -3,56 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Dash Demon Hub | Level Rankings</title>
+    <title>Geometry Dash Demon Hub | Level Rankings & Community History</title>
+    <meta name="description" content="The definitive Geometry Dash Demon guide. Track rankings for Easy, Medium, Hard, Insane, and Extreme demons.">
     <style>
         html { scroll-behavior: smooth; }
-        body { margin: 0; background: #020617; font-family: sans-serif; color: #e5e7eb; line-height: 1.6; padding-top: 60px; }
+        body { margin: 0; background: #020617; font-family: "Segoe UI", Roboto, Arial, sans-serif; color: #e5e7eb; line-height: 1.6; padding-top: 60px; }
+
+        /* NAVIGATION */
         nav { position: fixed; top: 0; width: 100%; background: #111827; height: 60px; display: flex; justify-content: center; align-items: center; z-index: 1000; border-bottom: 2px solid #3b82f6; }
         nav a { color: #94a3b8; text-decoration: none; margin: 0 12px; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; transition: 0.3s; }
         nav a:hover { color: #3b82f6; }
+
+        /* HEADER */
         header { background: linear-gradient(rgba(30, 64, 175, 0.9), rgba(2, 6, 23, 1)); padding: 5rem 1.5rem; text-align: center; border-bottom: 1px solid #1e293b; }
         header h1 { font-size: 3rem; margin: 0; color: #fff; }
+        header p { color: #94a3b8; font-size: 1.1rem; }
+
         .page-container { display: flex; max-width: 1200px; margin: 20px auto; padding: 0 20px; gap: 30px; }
         main { flex: 3; }
         .sidebar-area { flex: 1; }
+
         .article-box { background: #0f172a; padding: 30px; border-radius: 12px; margin-bottom: 30px; border-left: 4px solid #3b82f6; }
-        .panel { background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; padding: 2.5rem; margin-bottom: 2.5rem; }
+        .article-box h2 { color: #3b82f6; margin-top: 0; }
+
+        /* DIFFICULTY PANELS */
+        .panel { background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; padding: 2.5rem; margin-bottom: 2.5rem; scroll-margin-top: 80px; }
         .demon-display { display: flex; align-items: flex-start; margin-bottom: 25px; }
-        .icon-window { width: 60px; height: 60px; overflow: hidden; position: relative; margin-right: 20px; flex-shrink: 0; border: 2px solid #1e293b; border-radius: 8px; }
+        .difficulty-label { font-size: 1.8rem; font-weight: 800; margin-bottom: 10px; }
+        
+        .icon-window { width: 60px; height: 60px; overflow: hidden; position: relative; margin-right: 20px; flex-shrink: 0; border-radius: 8px; border: 2px solid #1e293b; }
         .icon-window img { position: absolute; width: 300px; image-rendering: pixelated; }
-        .pos-easy { left: -3px; top: 0px; }
-        .pos-medium { left: -67px; top: 0px; }
-        .pos-hard { left: -136px; top: 0px; }
-        .pos-insane { left: -21px; top: -65px; }
+
+        /* Sprite offsets for demons.png */
+        .pos-easy    { left: -3px;   top: 0px; }
+        .pos-medium  { left: -67px;  top: 0px; }
+        .pos-hard    { left: -136px; top: 0px; }
+        .pos-insane  { left: -21px;  top: -65px; }
         .pos-extreme { left: -110px; top: -65px; }
+
         .highlight-box { background: #1e293b; border-radius: 8px; padding: 20px; }
-        .top-ten-list { padding-left: 20px; color: #cbd5e1; }
-        .level-id { font-size: 0.75rem; color: #64748b; font-family: monospace; margin-left: 8px; }
+        .top-ten-list { padding-left: 20px; margin: 0; font-size: 0.95rem; color: #cbd5e1; }
+        .level-id { font-size: 0.75rem; color: #64748b; margin-left: 8px; font-family: monospace; }
+
+        /* FOOTER */
         footer { background: #111827; padding: 4rem 2rem; margin-top: 50px; border-top: 1px solid #1e293b; }
         .footer-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
-        @media (max-width: 900px) { .page-container { flex-direction: column; } header h1 { font-size: 2.2rem; } }
+        .footer-section h4 { color: #fff; margin-bottom: 15px; }
+        .footer-section p { font-size: 0.85rem; color: #94a3b8; }
+
+        @media (max-width: 900px) {
+            .page-container { flex-direction: column; }
+            header h1 { font-size: 2.2rem; }
+        }
     </style>
 </head>
 <body>
+
 <nav>
-    <a href="#easy">Easy</a><a href="#medium">Medium</a><a href="#hard">Hard</a><a href="#insane">Insane</a><a href="#extreme">Extreme</a><a href="#history">History</a>
+    <a href="#easy">Easy</a>
+    <a href="#medium">Medium</a>
+    <a href="#hard">Hard</a>
+    <a href="#insane">Insane</a>
+    <a href="#extreme">Extreme</a>
+    <a href="#history">History</a>
 </nav>
+
 <header>
-    <h1>GD Demon Hub</h1>
+    <h1>Geometry Dash Demon Hub</h1>
     <p>Comprehensive Rankings and Community Progression Lists</p>
 </header>
+
 <div class="page-container">
     <main>
         <div class="article-box">
             <h2>Welcome to the Hub</h2>
-            <p>This resource tracks the evolution of Geometry Dash's most challenging levels. We categorize levels to help you find your next challenge.</p>
+            <p>This resource is dedicated to tracking the evolution of Geometry Dash's most challenging levels. From 1.2 to the masterpieces of 2.2, we categorize levels to help you find your next challenge.</p>
         </div>
+
         <section id="easy" class="panel">
             <div class="demon-display">
                 <div class="icon-window"><img src="demons.png" class="pos-easy"></div>
-                <div>
-                    <h2 style="color: #4ade80; margin: 0;">Easy Demons</h2>
-                    <p>The starting point for every slayer. These levels introduce basic ship maneuvers and memory.</p>
+                <div class="difficulty-info">
+                    <div class="difficulty-label" style="color: #4ade80;">Easy Demons</div>
+                    <p>Perfect for building fundamentals like ship maneuvers and basic memory transitions.</p>
                 </div>
             </div>
             <div class="highlight-box">
@@ -63,18 +96,38 @@
                 </ol>
             </div>
         </section>
+
+        <section id="extreme" class="panel">
+            <div class="demon-display">
+                <div class="icon-window"><img src="demons.png" class="pos-extreme"></div>
+                <div class="difficulty-info">
+                    <div class="difficulty-label" style="color: #ef4444;">Extreme Demons</div>
+                    <p>The absolute skill ceiling of Geometry Dash. Home to the legendary Top 150 list.</p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <ol class="top-ten-list">
+                    <li>Acu <span class="level-id">#61234123</span></li>
+                    <li>Tidal Wave <span class="level-id">#95123412</span></li>
+                    <li>Bloodbath <span class="level-id">#10563421</span></li>
+                </ol>
+            </div>
+        </section>
+
         <article id="history" class="article-box">
             <h2>The History of the Demon List</h2>
-            <p>Today, the "Demon List" is a globally recognized ranking that tracks the absolute limit of human reaction speed.</p>
+            <p>The concept of a "Demon" was born when the community began creating "impossible" levels. Early levels like Demon Park set the standard, proving players were hungry for higher challenges.</p>
         </article>
     </main>
+
     <aside class="sidebar-area">
         <div class="panel">
             <h3>Pro Tips</h3>
-            <p>High refresh rates (144hz+) are nearly essential for Extreme Demons.</p>
+            <p style="font-size: 0.85rem;"><strong>Refresh Rate:</strong> 144hz+ is nearly essential for Extreme Demon sections.</p>
         </div>
     </aside>
 </div>
+
 <footer>
     <div class="footer-grid">
         <div class="footer-section">
@@ -87,7 +140,8 @@
             <p><a href="privacy.html" style="color: #94a3b8; text-decoration: none;">Privacy Policy</a></p>
         </div>
     </div>
-    <p style="text-align:center; color:#475569; font-size: 0.75rem; margin-top:30px;">© 2026 Geometry Dash Demon Hub.</p>
+    <p style="text-align:center; color:#475569; font-size: 0.75rem; margin-top:30px;">© 2026 Geometry Dash Demon Hub. Not affiliated with RobTop Games.</p>
 </footer>
+
 </body>
 </html>
