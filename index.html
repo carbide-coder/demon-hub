@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GD Demon Hub | The Ultimate Level Archive</title>
-    <meta name="description" content="Complete Geometry Dash Demon rankings. Level IDs for Easy, Medium, Hard, Insane, and Extreme demons with community history.">
     <style>
         html { scroll-behavior: smooth; }
         body { margin: 0; background: #020617; font-family: "Segoe UI", Roboto, Arial, sans-serif; color: #e5e7eb; line-height: 1.7; padding-top: 60px; }
@@ -15,8 +14,8 @@
         header h1 { font-size: 3.5rem; margin: 0; color: #fff; letter-spacing: -1px; }
         .page-container { display: flex; max-width: 1200px; margin: 20px auto; padding: 0 20px; gap: 40px; }
         main { flex: 3; }
-        .sidebar-area { flex: 1; }
         .panel { background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; padding: 2.5rem; margin-bottom: 2.5rem; scroll-margin-top: 80px; }
+        .article-box { background: #1e293b; padding: 40px; border-radius: 12px; margin-bottom: 30px; border-left: 6px solid #fbbf24; scroll-margin-top: 80px; }
         .demon-display { display: flex; align-items: flex-start; margin-bottom: 15px; }
         .icon-window { width: 60px; height: 60px; overflow: hidden; position: relative; margin-right: 20px; flex-shrink: 0; border-radius: 8px; border: 2px solid #1e293b; }
         .icon-window img { position: absolute; width: 200px; image-rendering: pixelated; }
@@ -25,7 +24,7 @@
         .pos-hard { left: -136px; top: 0px; }
         .pos-insane { left: -21px; top: -65px; }
         .pos-extreme { left: -110px; top: -65px; }
-        .list-title { font-size: 1.1rem; color: #3b82f6; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #1e293b; padding-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+        .list-title { font-size: 1.1rem; color: #3b82f6; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #1e293b; padding-bottom: 8px; text-transform: uppercase; }
         .highlight-box { background: #1e293b; border-radius: 8px; padding: 20px; }
         .top-ten-list { padding-left: 20px; margin: 0; font-size: 0.95rem; color: #cbd5e1; }
         .level-id { font-size: 0.75rem; color: #64748b; margin-left: 8px; font-family: monospace; }
@@ -42,7 +41,7 @@
 
 <header>
     <h1>GD Demon Hub</h1>
-    <p>Rankings, IDs, and Progression Guides</p>
+    <p>The definitive archive of Geometry Dash difficulty and community progression.</p>
 </header>
 
 <div class="page-container">
@@ -69,72 +68,6 @@
             </div>
         </section>
 
-        <section id="medium" class="panel">
-            <div class="demon-display">
-                <div class="icon-window"><img src="demons.png" class="pos-medium"></div>
-                <h2 style="color: #fbbf24; margin: 0;">Medium Demons</h2>
-            </div>
-            <div class="highlight-box">
-                <div class="list-title">Tier 2: Intermediate Challenges</div>
-                <ol class="top-ten-list">
-                    <li>B <span class="level-id">#34654271</span></li>
-                    <li>Ultra Violence <span class="level-id">#39561021</span></li>
-                    <li>VeritY <span class="level-id">#26749312</span></li>
-                    <li>Reanimation <span class="level-id">#10563421</span></li>
-                    <li>Lonely Travel <span class="level-id">#10156372</span></li>
-                    <li>Sakupen Egg <span class="level-id">#75412351</span></li>
-                    <li>Boxing Boxes <span class="level-id">#721945</span></li>
-                    <li>HeLL <span class="level-id">#26040186</span></li>
-                    <li>Mechanical Showdown <span class="level-id">#28123412</span></li>
-                    <li>Electrodynamix II <span class="level-id">#4512341</span></li>
-                </ol>
-            </div>
-        </section>
-
-        <section id="hard" class="panel">
-            <div class="demon-display">
-                <div class="icon-window"><img src="demons.png" class="pos-hard"></div>
-                <h2 style="color: #f87171; margin: 0;">Hard Demons</h2>
-            </div>
-            <div class="highlight-box">
-                <div class="list-title">Tier 3: Skill Benchmarks</div>
-                <ol class="top-ten-list">
-                    <li>Nine Circles <span class="level-id">#4215362</span></li>
-                    <li>Jawbreaker <span class="level-id">#4563212</span></li>
-                    <li>Future Funk <span class="level-id">#45123654</span></li>
-                    <li>White Women <span class="level-id">#60123412</span></li>
-                    <li>Forest Temple <span class="level-id">#10563421</span></li>
-                    <li>Double Dash <span class="level-id">#42153642</span></li>
-                    <li>Different Descent <span class="level-id">#65123412</span></li>
-                    <li>Forsaken Neon <span class="level-id">#321542</span></li>
-                    <li>Dance Massacre <span class="level-id">#1254321</span></li>
-                    <li>Psychosis <span class="level-id">#15632412</span></li>
-                </ol>
-            </div>
-        </section>
-
-        <section id="insane" class="panel">
-            <div class="demon-display">
-                <div class="icon-window"><img src="demons.png" class="pos-insane"></div>
-                <h2 style="color: #c084fc; margin: 0;">Insane Demons</h2>
-            </div>
-            <div class="highlight-box">
-                <div class="list-title">Tier 4: Elite Mastery</div>
-                <ol class="top-ten-list">
-                    <li>Windy Landscape <span class="level-id">#3215421</span></li>
-                    <li>Magma Bound <span class="level-id">#45123652</span></li>
-                    <li>Supersonic <span class="level-id">#2541236</span></li>
-                    <li>Stalemate <span class="level-id">#1245362</span></li>
-                    <li>Gregory <span class="level-id">#52143652</span></li>
-                    <li>Leyak <span class="level-id">#56123412</span></li>
-                    <li>Thanatophobia <span class="level-id">#62153642</span></li>
-                    <li>8o <span class="level-id">#4512365</span></li>
-                    <li>Necropolis <span class="level-id">#1245362</span></li>
-                    <li>Poltergeist <span class="level-id">#2541236</span></li>
-                </ol>
-            </div>
-        </section>
-
         <section id="extreme" class="panel">
             <div class="demon-display">
                 <div class="icon-window"><img src="demons.png" class="pos-extreme"></div>
@@ -157,6 +90,22 @@
             </div>
         </section>
 
+        <article id="history" class="article-box">
+            <h2 style="color: #fbbf24; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">The Comprehensive History of Demons</h2>
+            
+            <h3 style="color: #3b82f6;">The Early Days (Update 1.2 - 1.6)</h3>
+            <p>Before Update 1.2, Geometry Dash only had basic difficulty ratings. The first "Demon" ever created was <strong>Demon Park</strong> by MidNight. It was so significantly harder than any official level that RobTop (the developer) created the Demon rating specifically for it. During this era, levels like <em>Clubstep</em> and <em>Theory of Everything 2</em> became the benchmarks for skill.</p>
+
+            <h3 style="color: #3b82f6;">The Effect Era (Update 1.9)</h3>
+            <p>Update 1.9 changed the community forever with the introduction of the <strong>Nine Circles</strong> trend. Created by Zobros, this level used color triggers to create a flashing "seizure" effect that became a staple of Hard Demons. This era also saw the rise of the first truly legendary players who began pushing the game’s mechanics to their absolute limit.</p>
+
+            <h3 style="color: #3b82f6;">The Extreme Revolution (Update 2.0 - 2.1)</h3>
+            <p>With the release of Update 2.1, the gap between "Hard" and "Extreme" widened. Levels like <strong>Bloodbath</strong> by Riot became global icons, holding the #1 spot on the Demon List for nearly a year. This period saw the formalization of the <em>Pointercrate Demon List</em>, a community-run ranking that requires video proof and "clicks" to verify level completions.</p>
+
+            <h3 style="color: #3b82f6;">Modern Mechanics (Update 2.2+)</h3>
+            <p>Today, the game has entered its most complex phase. With the 2.2 update, "Platformer" demons have been added, allowing for free movement. High-tier extremes now utilize camera triggers, shaders, and frame-perfect timings that require thousands of hours of practice. Levels like <strong>Tidal Wave</strong> continue to prove that the human limit in Geometry Dash is constantly shifting.</p>
+        </article>
+
     </main>
 </div>
 
@@ -166,7 +115,7 @@
         <a href="privacy.html" style="color: #94a3b8; text-decoration: none; margin: 0 10px;">Privacy</a>
         <a href="terms.html" style="color: #94a3b8; text-decoration: none; margin: 0 10px;">Terms</a>
     </div>
-    <p style="color:#475569; font-size: 0.75rem;">© 2026 Geometry Dash Demon Hub. Not affiliated with RobTop Games.</p>
+    <p style="color:#475569; font-size: 0.75rem;">© 2026 Geometry Dash Demon Hub. This site is an independent fan resource and is not affiliated with RobTop Games.</p>
 </footer>
 
 </body>
