@@ -11,7 +11,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GD Demon Hub | The Ultimate Level Archive</title>
     <style>
-        html { scroll-behavior: smooth; }
+     .copy-btn {
+            background: #40ff7b; 
+            color: #000; 
+            border: none; 
+            padding: 8px 15px; 
+            border-radius: 5px; 
+            font-weight: 800; 
+            cursor: pointer; 
+            margin-top: 10px;
+            transition: transform 0.1s, background 0.2s;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+        .copy-btn:hover {
+            background: #00d2ff;
+            transform: scale(1.05);
+        }
+        .copy-btn:active {
+            transform: scale(0.95);
+        }        html { scroll-behavior: smooth; }
         body { margin: 0; background: #020617; font-family: "Segoe UI", Roboto, Arial, sans-serif; color: #e5e7eb; line-height: 1.7; padding-top: 60px; }
         nav { position: fixed; top: 0; width: 100%; background: #111827; height: 60px; display: flex; justify-content: center; align-items: center; z-index: 1000; border-bottom: 2px solid #3b82f6; }
         nav a { color: #94a3b8; text-decoration: none; margin: 0 12px; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; transition: 0.3s; }
@@ -185,31 +204,31 @@
                 Vortrox beat Erebus in only 8900 attempts!!!!
             </p>
         </div>
-      <section id="guides">
+    <section id="guides">
         <div class="section-header"><h2>PLAYER GUIDES & STRATEGY</h2></div>
         
         <article class="article-card">
             <h2>The Road to Your First Demon</h2>
-            <p>Beating your first Demon is the most important milestone in a GD player's career. Start with <strong>The Nightmare</strong> (ID: <span style="color:var(--accent-blue)">1350</span>) or <strong>The Lightning Road</strong>. Focus on Practice Mode until you can finish a run in under 40 attempts.</p>
-            <button onclick="copyToClipboard('1350')" style="background:var(--accent-blue); border:none; padding:5px 10px; border-radius:4px; font-weight:bold; cursor:pointer;">Copy The Nightmare ID</button>
+            <p>Beating your first Demon is the most important milestone in a GD player's career. It marks the shift from casual gameplay to high-tier completionism. To build your skill properly, you must avoid jumping into "New" Easy Demons which often rely on confusing 2.2 triggers. Instead, focus on the <strong>Legacy Tiers</strong>. These levels teach you the fundamental physics of the cube and ship without overwhelming you with visual effects.</p>
+            <button class="copy-btn" onclick="copyToClipboard('1350')">Copy The Nightmare ID: 1350</button>
         </article>
 
         <article class="article-card">
-            <h2>Pro Hardware: Boosting Your Performance</h2>
-            <p>To reach the level of top players like Zoink or Doggie, your hardware matters just as much as your skill. High-refresh-rate monitors and low-latency peripherals are the keys to consistency.</p>
-            <ul>
-                <li><strong>High Refresh Rate (144Hz - 360Hz):</strong> Playing on 60Hz limits your reaction time. Upgrading to a 240Hz or 360Hz monitor makes the game much smoother and reduces input lag.</li>
-                <li><strong>Mechanical Keyboards:</strong> Using switches like Cherry MX Reds or Razer Snap Tap helps with frame-perfect clicks and "straight flying" in Extreme Demons.</li>
-                <li><strong>The Mouse Choice:</strong> Most pros prefer the Logitech G Pro Wireless or Razer DeathAdder for their high polling rates and light weight.</li>
-            </ul>
+            <h2>Pro Hardware: The Competitive Edge in 2026</h2>
+            <p>If you aim to clear the Extreme Demon list, your hardware is your foundation. In a game where inputs are measured in milliseconds, even a small amount of "input lag" can make a level like <em>Tidal Wave</em> literally impossible to complete. Adopting professional-grade gear isn't just about luxury; it's about removing the technical barriers between your brain and the game.</p>
+            
+            <h3>High Refresh Rate Monitors (240Hz+)</h3>
+            <p>The jump from 60Hz to 144Hz is massive, but for the modern Demon list, 240Hz or 360Hz is the new standard. A higher refresh rate reduces "screen tearing" and makes the movement of the player icon significantly smoother. This is especially critical for <strong>Wave gameplay</strong>, where you need to see the exact position of your hitbox at all times to navigate tight gaps.</p>
+            
+            <h3>Low-Latency Peripherals</h3>
+            <p>Standard office mice and keyboards often have a polling rate of 125Hz, which can cause "dropped inputs." Professional players use mice like the <strong>Logitech G Pro</strong> or <strong>Razer DeathAdder</strong> which offer 1000Hz to 8000Hz polling rates. For keyboards, look for "Rapid Trigger" technology. This allows the key to reset the moment you lift your finger, making "straight flying" and "spam" sections much easier to control.</p>
         </article>
 
         <article class="article-card">
-            <h2>Mastering the "Pro" Practice Mindset</h2>
-            <p>Use <strong>Reverse Practice</strong>. Start at the end of the level (80-100%) and work your way back to 0%. This ensures you have total confidence when you finally reach the end of a long level on a real run.</p>
+            <h2>The Psychology of Practice</h2>
+            <p>Success in Geometry Dash is 10% skill and 90% persistence. Many players fail because they get "mind-blocked" on a specific transition. To prevent this, use a copy of the level and place <strong>Start Positions</strong> at the most difficult sections. You should be able to run the final 30% of any level at least five times in a row before you attempt it from 0%. This builds the "clutch factor" needed to stay calm when you reach the end of a difficult run.</p>
         </article>
     </section>
-
     <script>
         function copyToClipboard(text) {
             navigator.clipboard.writeText(text).then(() => {
@@ -228,6 +247,19 @@
     </div>
     <p style="color:#475569; font-size: 0.75rem;">© 2026 Geometry Dash Demon Hub. Not affiliated with RobTop Games.</p>
 </footer>
-
-</body>
+<script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                // Changing the alert to a more professional notification
+                const btn = event.target;
+                const originalText = btn.innerText;
+                btn.innerText = "ID COPIED!";
+                btn.style.background = "#00d2ff";
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.background = "#40ff7b";
+                }, 2000);
+            });
+        }
+    </script></body>
 </html>
